@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+}
+
+/*=========================
+Generic classes
+=========================*/
+
+select{
+    display: block!important;
+}
+#typeSelect{
+    display: none!important;
+}
+.caret{
+    visibility: hidden!important;
+}
