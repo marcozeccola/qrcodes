@@ -19,43 +19,47 @@
 </head>
 
 <body>
-
-    <span>che tipo di qr è?</span>
-    <br>
-    <form action="eindex.php" method="POST">
-
-        <div class="input-field col s12 m6">
-            <select class="icons" name="typeOf" id="typeSelect">
-                <option class="left" id="setEmail" name="setEmail" value="0">email</option>
-                <option class="left" id="no" name="no" value="2">altro</option>
-            </select>
-        </div>
-
-        <button class="btn waves-effect waves-light" type="button" onclick="mostraInput()">Invio tipo input
-            <i class="material-icons right">send</i>
-        </button>
+    <div class="center-align">
+        <h3>CHE TIPO DI QR È?</h3>
         <br>
-        <div id="mostraDopo" class="hide">
-            <span class="card-title">cosa vuoi tramutare in qr code?</span>
-            <br>
-            <div id="text">
-                <p>testo:</p>
-            </div>
-            <div class="hide" id="email">
-                <p>email:</p>
+        <form action="eindex.php" method="POST">
+
+            <div class="input-field col s12 m6">
+                <select class="icons" name="typeOf" id="typeSelect">
+                    <option class="left " id="setEmail" name="setEmail" value="0">email</option>
+                    <option class="left" id="setSite" name="setSite" value="1">sito web</option>
+                    <option class="left" id="no" name="no" value="2">altro</option>
+                </select>
             </div>
 
-            <input name="text">
-
-            <br>
-            <button class="btn waves-effect waves-light" type="submit"> CREA QR
+            <button class="btn waves-effect waves-light" type="button" onclick="mostraInput()">Invio tipo input
                 <i class="material-icons right">send</i>
             </button>
             <br>
-        </div>
+            <div id="mostraDopo" class="hide">
+                <span class="card-title">cosa vuoi tramutare in qr code?</span>
+                <br>
+                <div id="text">
+                    <p>testo:</p>
+                </div>
+                <div class="hide" id="email">
+                    <p>email:</p>
+                </div>
+                <div class="hide" id="site">
+                    <p>site:</p>
+                </div>
 
-    </form>
+                <input name="text">
 
+                <br>
+                <button class="btn waves-effect waves-light" type="submit"> CREA QR
+                    <i class="material-icons right">send</i>
+                </button>
+                <br>
+            </div>
+
+        </form>
+    </div>
 </body>
 <!--.js and jquery-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
