@@ -20,37 +20,66 @@
 
 <body>
     <div class="center-align">
-        <h3>CHE TIPO DI QR È?</h3>
+        <h3>CREA IL QR CODE CHE DESIDERI!</h3>
         <br>
         <form action="eindex.php" method="POST">
 
+            <div>
+                <h5>Scegli la grandezza</h5>
+            </div>
             <div class="input-field col s12 m6">
-                <select class="icons" name="typeOf" id="typeSelect">
-                    <option class="left " id="setEmail" name="setEmail" value="0">email</option>
-                    <option class="left" id="setSite" name="setSite" value="1">sito web</option>
-                    <option class="left" id="no" name="no" value="2">altro</option>
+                <select class="icons" name="typeOfMonitor" id="typeSelectMonitor">
+                    <option class="left " value="0">PICCOLO</option>
+                    <option class="left"  value="1">MEDIO</option>
+                    <option class="left"  value="2">GRANDE</option>
+                    <option class="left"  value="3">MOLTO GRANDE</option>
+                </select>
+            </div>
+            <div>
+                <h5>Scegli il tipo di striga/he vuoi codificare</h5>
+            </div>
+            <div class="input-field col s12 m6">
+                <select class="icons" name="typeOfQr" id="typeSelect">
+                    <option class="left " id="setEmail" value="0">email</option>
+                    <option class="left" id="setSite" value="1">sito web</option>
+                    <option class="left" id="setContact" value="2">contatto</option>
+                    <option class="left" id="setCall" value="3">chiamata</option>
+                    <option class="left" id="setSms" value="4">sms</option>
+                    <option class="left" id="no" name="no" value="5">altro</option>
                 </select>
             </div>
 
-            <button class="btn waves-effect waves-light" type="button" onclick="mostraInput()">Invio tipo input
+
+            <button class="btn waves-effect waves-light" type="button" onclick="mostraInput()">Invio tipo di testo e grandezza
                 <i class="material-icons right">send</i>
             </button>
             <br>
             <div id="mostraDopo" class="hide">
-                <span class="card-title">cosa vuoi tramutare in qr code?</span>
+                <h4>Cosa vuoi tramutare in qr code?</h4>
                 <br>
                 <div id="text">
-                    <p>testo:</p>
+                    <h5>testo:</h5>
                 </div>
                 <div class="hide" id="email">
-                    <p>email:</p>
+                    <h5>email:</h5>
                 </div>
                 <div class="hide" id="site">
-                    <p>site:</p>
+                    <h5>sito:</h5>
+                </div>
+                <div class="hide" id="call">
+                    <h5>numero:</h5>
                 </div>
 
-                <input name="text">
 
+
+                <input name="text" class="hide" id="textInput">
+                <div class="hide" id="contact">
+                    <h5>Nome e numero di telefono:</h5>
+                </div>
+                <div class="row">
+                    <input name="name" id="name" class="hide">
+                    <input name="phone" id="phone" type="tel" class="hide ">
+                </div>
                 <br>
                 <button class="btn waves-effect waves-light" type="submit"> CREA QR
                     <i class="material-icons right">send</i>

@@ -12,6 +12,9 @@ select{
 #typeSelect{
     display: none!important;
 }
+#typeSelectMonitor{
+    display: none!important;
+}
 .caret{
     visibility: hidden!important;
 }
