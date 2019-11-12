@@ -4,73 +4,61 @@ $(document).ready(function () {
 });
 
 function mostraInput() {
-    let index = document.getElementById("typeSelect").selectedIndex;
-    let email = document.getElementById("email");
-    let text = document.getElementById("text");
-    let site = document.getElementById("site");
-    let contact = document.getElementById("contact");
-    let name = document.getElementById("name");
-    let phone = document.getElementById("phone");
-    let textInput = document.getElementById("textInput");
-    let call = document.getElementById("call");
+
+    /*seconda parte di intex.php */
     let mostraDopo = document.getElementById("mostraDopo");
 
+    /*value dell''option della select */
+    let index = document.getElementById("typeSelect").selectedIndex;
+
+    /*comincia col mostrare il div generale dove c'è dentro il resto*/
     mostraDopo.classList.remove("hide");
 
-    /*switch gestione comparsa/scamparsa */ 
-    /*estremamente lunga e rindondante ma non si può fare altrimenti per via del getelementById (sarebbe comodo farlo con array)*/ 
+    /*switch delle option */
+    /*si chiama forMostra() con per argomento il numero corrispondente alla posizione in array degi elementi da mostrare */
     switch (index) {
+        //email
         case 0:
-            email.classList.remove("hide");
-            textInput.classList.remove("hide");
-            text.classList.add("hide");
-            site.classList.add("hide");
-            contact.classList.add("hide");
-            name.classList.add("hide");
-            phone.classList.add("hide");
-            call.classList.add("hide");
+            forMostra(0, 6);
             break;
+        //sito
         case 1:
-            site.classList.remove("hide");
-            textInput.classList.remove("hide");
-            email.classList.add("hide");
-            text.classList.add("hide");
-            contact.classList.add("hide");
-            name.classList.add("hide");
-            phone.classList.add("hide");
-            call.classList.add("hide");
+            forMostra(2,6);
             break;
+        //contact card
         case 2:
-            contact.classList.remove("hide");
-            name.classList.remove("hide");
-            phone.classList.remove("hide");
-            email.classList.add("hide");
-            text.classList.add("hide");
-            site.classList.add("hide");
-            textInput.classList.add("hide");
-            call.classList.add("hide");
+            forMostra(3, 4, 5);
             break;
+        //chiamata-sms
         case 3:
         case 4:
-            call.classList.remove("hide");
-            textInput.classList.remove("hide");
-            contact.classList.add("hide");
-            name.classList.add("hide");
-            phone.classList.add("hide");
-            email.classList.add("hide");
-            text.classList.add("hide");
-            site.classList.add("hide");
-            
+            forMostra(7, 6);
             break;
-        default:
-            text.classList.remove("hide");
-            textInput.classList.remove("hide");
-            email.classList.add("hide");
-            site.classList.add("hide");
-            contact.classList.add("hide");
-            name.classList.add("hide");
-            phone.classList.add("hide");
-            call.classList.add("hide");
+        //altro
+        case 5:
+            forMostra(1, 6);
             break;
+    }
+}
+
+/*function meccanismo di show/hide */
+function forMostra(primo, secondo, terzo) {
+
+    /*array input output da ciclare*/
+    let io = [];
+
+    io[0] = document.getElementById("email");
+    io[1] = document.getElementById("text");
+    io[2] = document.getElementById("site");
+    io[3] = document.getElementById("contact");
+    io[4] = document.getElementById("name");
+    io[5] = document.getElementById("phone");
+    io[6] = document.getElementById("textInput");
+    io[7] = document.getElementById("call");
+
+    /*for con controllo argomenti funzione con remove/add class hide*/
+    for (let i = 0; i < 9; i++) {
+        if (i == primo || i == secondo || i == terzo) io[i].classList.remove("hide");
+        else io[i].classList.add("hide");
     }
 }

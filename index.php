@@ -49,7 +49,6 @@
                 </select>
             </div>
 
-
             <button class="btn waves-effect waves-light" type="button" onclick="mostraInput()">Invio tipo di testo e grandezza
                 <i class="material-icons right">send</i>
             </button>

@@ -6,7 +6,7 @@
     /*testo utilizzato per tutti i tipi di qr tranne per la contact card*/ 
     $content = $_REQUEST['text'];
 
-    /* Directory in ocale dove finira il file */
+    /* Directory in locale dove finira il file */
     $tempDir = 'qrcodeimg/';
 
     /*select del tipo di qr*/
@@ -54,7 +54,7 @@
             $pxSize = 32;
             break;
     }
-    
+
     /*creo il nome del file .png grazie al protocollo di criptazione md5 criptando la stringa che verraà codificata in qr */
     $fileName = 'qrcode'.md5($codeContents).'.png';
 
