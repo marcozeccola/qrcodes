@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QR Code</title>
+
+    <!-- MATERIALIZE -->
+    <!--css from materialize's cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!--material design css-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+
+    <!--custom css-->
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/animate.css">
+
+</head>
+
+<body>
+    <header class="navbar-fixed">
+        <nav class="row bars darken-3">
+        </nav>
+    </header>
+
+    <main class="valign-wrapper">
+        <span class="container black-text  ">
+
+            <h1 class="title ">Qr Code</h1>
+
+            <p class="flow-text">Cosa sono?</p>
+
+            <blockquote class="flow-text">Il Qr code è un codice a barre bidimensionale di forma quadrata composto da
+                moduli neri disposti all'interno di uno schema bianco.
+                Prende il suo nome dalla sua principale caratteristica: la velocità attraverso la quale fornisce delle
+                informazioni. La sigla QR deriva dall’inglese “quick response” e indica la rapidità nella decodifica
+                delle informazioni contenute al suo interno. </blockquote>
+
+        </span>
+
+    </main>
+
+    <div class="center-align">
+        <img src="../img/main_qrcode.png" class="logo " />
+        <img src="../img/main_qrcode2.png" class="logo " />
+    </div>
+
+    <div class="row center-align">
+        <div class="col s12">
+            <p class="flow-text">
+                La matrice di un QR code è composta da un numero variabile di moduli a seconda della versione utilizzata
+                e può essere letta in qualsiasi direzione. Ecco alcuni elementi che lo formano:
+            </p>
+        </div>
+
+        <div class="col s4 container black-text">
+            <blockquote class="flow-text">
+                <ul>
+                    <li>
+                        <p class="green-text">I tre grandi quadrati che sono
+                            chiamati position detection pattern e rappresentano i margini del QRC. L’area esterna
+                            intorno a essi è definita quiet area.</p>
+                    </li>
+                    <li>
+                        <p class="blue-text">Il quadrato piccolo in basso a destra che ha la funzione confermare allo
+                            scanner il suo
+                            perfetto allineamento. A seconda della versione è possibile trovarne più di uno.</p>
+                    </li>
+                </ul>
+            </blockquote>
+        </div>
+
+
+
+        <div class="col s4">
+            <img src="../img/qrcode_struttura.jpg" class="logo" />
+        </div>
+
+        <div class="col s4">
+            <blockquote class="flow-text">
+                <ul>
+                    <li>
+                        <p class="red-text">Le sezioni evidenziate in rosso indicano il formato specificando se il
+                            contenuto del QR code
+                            è un sito web, una Vcard, un’immagine o un testo. </p>
+                    </li>
+                    <li>
+                        <p class="orange-text">I moduli evidenziati in arancione rappresentano il numero della versione
+                            del QR code.
+                            Maggiore è il numero di moduli che compongono la matrice, più alto è il numero della
+                            versione.</p>
+                    </li>
+                </ul>
+            </blockquote>
+        </div>
+    </div>
+
+    <div class="row center-align">
+        <div class="col">
+            <img src="../img/scan_qrcode.jpg" class="logo" />
+        </div>
+        <div class="col">
+            <img src="../img/scan_qrcode2.jpg" class="logo" />
+        </div>
+    </div>
+
+
+    <footer class="page-footer bars darken-3">
+        <div class="footer-copyright bars darken-4">
+            <div class="container">
+                &copy; 2019 November 27. Andries Vlad, Chamorro Tineo Giancarlo Martin, Greco Matteo, Zeccola Marco.
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!--JQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- js from materialize's cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!--material design js-->
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+<!--custom js-->
+<script src="js/main.js"></script>
+</body>

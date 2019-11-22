@@ -3,6 +3,7 @@ $(document).ready(function () {
     $('select').formSelect();
 });
 
+
 function mostraInput() {
 
     /*seconda parte di intex.php */

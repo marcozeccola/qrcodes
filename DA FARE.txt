@@ -1,0 +1,12 @@
+[ELENCO COSE DA FARE # COMMENTARE CON FATTO QUELLE GIÀ FATTE # ACCANTO AD OGNI PROBLEMA PRINCIPALE SCIVERE DATA]
+(scrivere problemi o cose da fare e poi sotto problemi da risolvere, e, se ne conseguono, altri sottoproblemi. In questo modo per tutti sarà più semplice lavorare e campire quanto manca alla risoluzione di un problema o se non si sta affrontando nel modo corretto)
+Last Update --> 22/11/2019
+
+-->creare pagina barcode 22/11/2019
+
+--> rendere più efficciente main.js 11/11/2019 FATTO
+    --> evitare gigantesca rindondanza nello switch show/hide 
+        -->fare funzione esterna per aggiungere togliere class hide
+        
+        
+

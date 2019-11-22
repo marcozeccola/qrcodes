@@ -19,6 +19,7 @@
 </head>
 
 <body>
+
     <div class="center-align">
         <h3>CREA IL QR CODE CHE DESIDERI!</h3>
         <br>
@@ -30,9 +31,9 @@
             <div class="input-field col s12 m6">
                 <select class="icons" name="typeOfMonitor" id="typeSelectMonitor">
                     <option class="left " value="0">PICCOLO</option>
-                    <option class="left"  value="1">MEDIO</option>
-                    <option class="left"  value="2">GRANDE</option>
-                    <option class="left"  value="3">MOLTO GRANDE</option>
+                    <option class="left" value="1">MEDIO</option>
+                    <option class="left" value="2">GRANDE</option>
+                    <option class="left" value="3">MOLTO GRANDE</option>
                 </select>
             </div>
             <div>
@@ -49,7 +50,8 @@
                 </select>
             </div>
 
-            <button class="btn waves-effect waves-light" type="button" onclick="mostraInput()">Invio tipo di testo e grandezza
+            <button class="btn waves-effect waves-light" type="button" onclick="mostraInput()">Invio tipo di testo e
+                grandezza
                 <i class="material-icons right">send</i>
             </button>
             <br>

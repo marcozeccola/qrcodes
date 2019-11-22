@@ -1,0 +1,53 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+h1.title, .footer-copyright a {
+    font-family: 'Architects Daughter', cursive;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+
+body.welcome {
+    background: #03a9f4;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+.welcome .splash {
+    height: 0px;
+    padding: 0px;
+    border: 130em solid #4fc3f7;
+    position: fixed;
+    left: 50%;
+    top: 100%;
+    display: block;
+    box-sizing: initial;
+    overflow: hidden;
+}
+
+.welcome #welcome {
+    background: #03a9f4;
+    width: 56px;
+    height: 56px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    overflow: hidden;
+    opacity: 0;
+}
+.bars{
+    background: #29b6f6;
+}
