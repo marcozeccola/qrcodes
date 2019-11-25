@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>QR Code</title>
+    <title>Bar code</title>
 
     <!-- MATERIALIZE -->
     <!--css from materialize's cdn-->
@@ -28,34 +28,88 @@
     </header>
 
     <main class="valign-wrapper">
-        <span class="container black-text  ">
+        <span class="container black-text ">
 
-            <h1 class="title ">Bar Codes</h1>
+            <h2 class="title ">Codici a barre</h2>
+            <p class="flow-text">Li hai sicuramente già visti! Scopriamo di più a proposito!</p>
 
-            <p class="flow-text">Cosa sono?</p>
+            <blockquote class="flow-text">
+                Il codice a barre è un codice di identificazione costituito da
+                un insieme di elementi grafici a contrasto elevato destinati
+                alla lettura per mezzo di un sensore a scansione e decodificati per restituire
+                l'informazione in essi contenuta.
+            </blockquote>
 
-            <blockquote class="flow-text">Un codice a barre è una sequenza di spazi bianchi e spazi neri codificati in
-                varie maniere. Il lettore emette un raggio (con un CCD o con un laser) e legge la luce riflessa dalle
-                righe bianche e nere capendo la sua composizione. La
-                composizione di quei tratti bianchi e neri cambia da tipo a tipo codice. Cambia come sequenza, come tipi
-                di spessori presenti  e dal numero delle righe presenti . </blockquote>
 
         </span>
-
     </main>
 
     <div class="center-align">
-        <img src="../img/main_barcode.png" class="logo " />
-        <img src="../img/main_barcode2.png" class="logo " />
+        <img src="../img/main_barre.png" class="logo " />
+        <img src="../img/main_barre2.jpg" class="logo " />
     </div>
 
-    
+    <div class="row center-align">
+        <blockquote class="flow-text">
+            I codici a barre che vedremo sono quelli di tipo Lineare.
+        </blockquote>
+
+        <div class="col s4 container black-text">
+            <blockquote class="flow-text">
+                <ul>
+                    <li>
+                        <p class="green-text">
+                            Codici a barre di tipo Lineare
+                        </p>
+                    </li>
+                    <li>
+                        <p class="blue-text">
+                            La maggior parte dei codici ha un codice di controllo (check digit)
+                            che l'unità di lettura è in grado di ricalcolare e verificare per assicurare
+                            la corretta lettura e l'integrità dei dati.
+                            Il barcode lineare è composto da un susseguirsi di elementi
+                            ovvero un susseguirsi di barre e spazi. La barra è l'elemento scuro del barcode,
+                            formato da un segmento verticale
+                        </p>
+                    </li>
+                </ul>
+            </blockquote>
+        </div>
+
+
+
+        <div class="col s4">
+            <img src="../img/barre_struttura.png" class="barre" />
+        </div>
+
+        <div class="col s4">
+            <blockquote class="flow-text">
+                <ul>
+                    <li>
+                        <p class="red-text">
+                            Esempio di codice a barre lineare di tipo
+                            Code 128, diffuso in ambito industriale.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="orange-text">
+                            Il codice è diviso in 5 settori :
+                            1: Quiet zone, ogni sequenza deve essere preceduta e seguita da un fase di "riposo";
+                            2-5: Bit di Start e Bit di Stop, per permettere di capire se il barcode è stato letto per intero, l'informazione è preceduta da un carattere di start e seguita da un carattere di stop;
+                            3: [FNC1]+codifica dei dati, area contenente i dati della codifica;
+                            4: codice di controllo, una forma di controllo utilizzata per il rilevamento dell'errore.
+                        </p>
+                    </li>
+                </ul>
+            </blockquote>
+        </div>
+    </div>
 
 
     <footer class="page-footer bars darken-3">
         <div class="footer-copyright bars darken-4">
             <div class="container">
-                &copy; 2019 November 27. Andries Vlad, Chamorro Tineo Giancarlo Martin, Greco Matteo, Zeccola Marco.
+                &copy; 2019 November 27. Zeccola Marco, Andries Vlad,  Greco Matteo, Chamorro Tineo Giancarlo Martin.
             </div>
         </div>
     </footer>
