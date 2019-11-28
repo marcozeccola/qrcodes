@@ -42,7 +42,7 @@ function mostraInput() {
     }
 }
 
-/*function meccanismo di show/hide */
+/*ANCHOR show/hide */
 function forMostra(primo, secondo, terzo) {
 
     /*array input output da ciclare*/

@@ -2,7 +2,7 @@
 
     /*includo il file 'library' della cartella di creazione del qr */
     include('phpqrcode/qrlib.php');
-   
+    
     /*testo utilizzato per tutti i tipi di qr tranne per la contact card*/ 
     $content = $_REQUEST['text'];
 
@@ -19,7 +19,7 @@
     $phone = $_REQUEST['phone'];
     $name = $_REQUEST['name'];
     
-
+    //ANCHOR assegnamento content
     /*assegnamento alla variabile di codifica i vari testi da appunto codificare */
     switch($select){
         case 0:
@@ -123,35 +123,35 @@
     </nav>
     <br>
     <div>
-    <!--stampo immagine .png-->
-    <img src="<?php echo $urlRelativeFilePath ?>">
+        <!--stampo immagine .png-->
+        <img src="<?php echo $urlRelativeFilePath ?>">
 
-    <!--tabella con qr decodificato e directory file PNG-->
-      <table class="responsive-table centered">
+        <!--tabella con qr decodificato e directory file PNG-->
+        <table class="responsive-table centered">
             <thead>
-              <tr>
-                  <th>testo</th>
-                  <th>url in locale file png</th>
-              </tr>
+                <tr>
+                    <th>testo</th>
+                    <th>url in locale file png</th>
+                </tr>
             </thead>
-    
+
             <tbody>
-              <tr>
-                <td>
-                <?php
+                <tr>
+                    <td>
+                        <?php
                     /*differenzio i 2 casi di diverse variabili elaborate */
                     if($select!=2) echo $content ; //tutti i casi tranne le contact cards
                     else echo'<b>Numero</b>: '.$phone.'<br><b>Nome e Cognome</b>: '.$name; //siccome utilizzano due campi input diversi
                 ?>
-                </td>
-                <td><?php  echo $pngAbsoluteFilePath ?></td>
-              </tr>
-              
+                    </td>
+                    <td><?php  echo $pngAbsoluteFilePath ?></td>
+                </tr>
+
             </tbody>
-          </table>
-                
-    
-    
+        </table>
+
+
+
 </body>
 <!--.js and jquery-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

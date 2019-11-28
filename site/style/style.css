@@ -1,4 +1,3 @@
-
 *{
     box-sizing: border-box;
 }
@@ -50,4 +49,7 @@ body.welcome {
 }
 .bars{
     background: #29b6f6;
+}
+.sections{
+    position: relative;
 }
